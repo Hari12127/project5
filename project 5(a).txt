@@ -1,0 +1,36 @@
+class A{
+    public String accnum;
+    public String acchold;
+    public double bal;
+    public void A(String accnum ,String acchold){
+        this.accnum=accnum;
+        this.acchold=acchold;
+        this.bal=0.0;
+         }
+    public String getaccnum(){
+        return accnum;
+    }  
+    public String getaccchold(){
+        return acchold;
+    }
+    public double getbal(){
+        System.out.println("balance:"+bal);
+        return bal;
+    }
+   public void deposit(double amt){
+        if(amt>0){
+            bal=bal+amt;
+            System.out.println("deposit amount:"+amt);
+        }
+        else{
+            System.out.println("invalid enter correctly:");
+        }}
+       public void  withdraw(double amt){
+            if(amt>0&&amt<=bal){
+                bal=bal-amt;
+                System.out.println("debited amount:"+amt);
+            }else{
+                System.out.println("invalid amount:");
+            }
+        }
+    }
